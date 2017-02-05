@@ -20,11 +20,14 @@ h4 {
   padding: 10px;
 }
 
-.flexContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+h2 {
+  display: block;
 }
+h5 {
+  display: block;
+  margin-top: 15px;
+}
+
 .flexContainer .item img {
   height: 200px;
   width:300px;
@@ -104,10 +107,14 @@ nav span {
   text-align: center;
 }
 
-
-.flexContainer.location_info {
-  display: block;
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flexContainer .location_info {
   padding-top: 5px;
+
 }
 
 #locations {
@@ -121,23 +128,34 @@ nav span {
   width: 1100px;
 
 }
+.flexContainer .locations {
+  padding-top: 5px;
+
+}
 
 .location_info {
   opacity: 1.0;
   padding: 10px;
   margin: 5px 20px;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.location {
   background-color: black;
   flex-basis: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
+  margin: 5px 18px;
 }
 
 
 #contact {
   height: 200px;
 }
-
 
 
 footer {
